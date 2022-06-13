@@ -27,7 +27,7 @@ import (
 	"regexp"
 	"time"
 
-	"github.com/GoogleCloudPlatform/cloudsql-proxy/proxy/proxy"
+	"github.com/guycipher/cloudsql-proxy-mailjit/proxy/proxy"
 	"github.com/lib/pq"
 )
 

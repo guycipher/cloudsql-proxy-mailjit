@@ -21,7 +21,7 @@ import (
 	"os"
 	"testing"
 
-	"github.com/GoogleCloudPlatform/cloudsql-proxy/proxy/fuse"
+	"github.com/guycipher/cloudsql-proxy-mailjit/proxy/fuse"
 )
 
 func TestFUSESupport(t *testing.T) {

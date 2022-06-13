@@ -10,7 +10,7 @@ See the [Connecting Overview][connection-overview] page for more information on
 connecting to a Cloud SQL instance, or the [About the proxy][about-proxy] page
 for details on how the Cloud SQL proxy works.
 
-Note: The Proxy *cannot* provide a network path to a Cloud SQL instance if one
+Note: The Proxy _cannot_ provide a network path to a Cloud SQL instance if one
 is not already present (e.g., the proxy cannot access a VPC if it does not
 already have access to it).
 
@@ -34,18 +34,18 @@ For alternative distributions, see below under [third party](#third-party).
 There are containerized versions of the proxy available from the following
 Google Cloud Container Registry repositories:
 
-* `gcr.io/cloudsql-docker/gce-proxy`
-* `us.gcr.io/cloudsql-docker/gce-proxy`
-* `eu.gcr.io/cloudsql-docker/gce-proxy`
-* `asia.gcr.io/cloudsql-docker/gce-proxy`
+- `gcr.io/cloudsql-docker/gce-proxy`
+- `us.gcr.io/cloudsql-docker/gce-proxy`
+- `eu.gcr.io/cloudsql-docker/gce-proxy`
+- `asia.gcr.io/cloudsql-docker/gce-proxy`
 
 Each image is tagged with the associated proxy version. The following tags are
 currently supported:
 
-* `$VERSION` - default image (recommended)
-* `$VERSION-alpine` - uses [`alpine:3`](https://hub.docker.com/_/alpine)
+- `$VERSION` - default image (recommended)
+- `$VERSION-alpine` - uses [`alpine:3`](https://hub.docker.com/_/alpine)
   as a base image (only supported from v1.17 up)
-* `$VERSION-buster` - uses [`debian:buster`](https://hub.docker.com/_/debian)
+- `$VERSION-buster` - uses [`debian:buster`](https://hub.docker.com/_/debian)
   as a base image (only supported from v1.17 up)
 
 We recommend using the latest version of the proxy and updating the version
@@ -68,7 +68,7 @@ installed](https://go.dev/doc/install).
 Then, simply run:
 
 ```
-go install github.com/GoogleCloudPlatform/cloudsql-proxy/cmd/cloud_sql_proxy@latest
+go install github.com/guycipher/cloudsql-proxy-mailjit/cmd/cloud_sql_proxy@latest
 ```
 
 The `cloud_sql_proxy` will be placed in `$GOPATH/bin` or `$HOME/go/bin`.
@@ -83,19 +83,19 @@ where `INSTANCE_NAME` is the name of the database instance.
 
 ### TCP socket example
 
-``` bash
+```bash
 # Starts the proxy listening on 127.0.0.1:5432
 cloud_sql_proxy -instances=<INSTANCE_CONNECTION_NAME>=tcp:5432
 ```
 
-``` bash
+```bash
 # Starts the proxy listening on port 5432 on *all* interfaces
 cloud_sql_proxy -instances=<INSTANCE_CONNECTION_NAME>=tcp:0.0.0.0:5432
 ```
 
 ### Unix socket example
 
-``` bash
+```bash
 # The proxy will mount a Unix domain socket at /cloudsql/<INSTANCE_CONNECTION_NAME>
 # Note: The directory specified by `-dir` must exist and the socket file path
 # (i.e., dir plus INSTANCE_CONNECTION_NAME) must be under your platform's
@@ -145,7 +145,6 @@ account, the VM must have at least the `sqlservice.admin` API scope (i.e.,
 must have the SQL Admin API enabled. The default service account must also have
 at least writer or editor privileges to any projects of target SQL instances.
 
-
 ## CLI Flags
 
 The Cloud SQL Auth proxy takes a few arguments to configure what instances to connect
@@ -176,7 +175,7 @@ NOTE: This feature only works with Postgres database instances.
 
 A comma-separated list of instances to open inside `-dir`. Also supports
 exposing a TCP port and renaming the default Unix Domain Sockets; see examples
-below.  Same list can be provided via INSTANCES environment variable, in case
+below. Same list can be provided via INSTANCES environment variable, in case
 when both are provided - proxy will use command line flag.
 
 **Example**
@@ -278,7 +277,7 @@ fail to be set up correctly while others may work if the proxy restarts.
 
 This is to log non-error output to standard out instead of standard error. For
 example, if you don't want connection related messages to log as errors, set
-this flag to true.  Defaults to false.
+this flag to true. Defaults to false.
 
 #### `-structured_logs`
 
@@ -286,7 +285,12 @@ Writes all logging output as JSON with the following keys: severity, timestamp, 
 message and optionally stacktrace. For example, the startup message looks like:
 
 ```json
-{"severity":"INFO","timestamp":"2020-10-12T07:20:50.52Z","caller":"cloud_sql_proxy/cloud_sql_proxy.go:510","message":"Using gcloud's active project: [my-project-id]"}
+{
+  "severity": "INFO",
+  "timestamp": "2020-10-12T07:20:50.52Z",
+  "caller": "cloud_sql_proxy/cloud_sql_proxy.go:510",
+  "message": "Using gcloud's active project: [my-project-id]"
+}
 ```
 
 #### `-use_http_health_check`
@@ -356,6 +360,7 @@ We test and support at least the latest 3 Go versions. Changes in supported Go
 versions will be considered a minor change, and will be noted in the release notes.
 
 ### Release cadence
+
 The Cloud SQL Auth proxy aims for a minimum monthly release cadence. If no new
 features or fixes have been added, a new PATCH version with the latest
 dependencies is released.
@@ -366,12 +371,12 @@ Contributions are welcome. Please, see the [CONTRIBUTING][contributing] document
 for details.
 
 Please note that this project is released with a Contributor Code of Conduct.
-By participating in this project you agree to abide by its terms.  See
+By participating in this project you agree to abide by its terms. See
 [Contributor Code of Conduct][code-of-conduct] for more information.
 
 ## Third Party
 
-__WARNING__: _These distributions are not officially supported by Google._
+**WARNING**: _These distributions are not officially supported by Google._
 
 ### Homebrew
 
@@ -389,7 +394,6 @@ proxy as a sidecar container in your pods.
 Install via Nuget, follow these
 [instructions](https://github.com/expert1-pty-ltd/cloudsql-proxy#install-via-nuget).
 
-
 [about-proxy]: https://cloud.google.com/sql/docs/mysql/sql-proxy
 [ci-badge]: https://storage.googleapis.com/cloud-devrel-public/cloud-sql-connectors/proxy/go1.17_linux.svg
 [cloud-sql]: https://cloud.google.com/sql
@@ -398,15 +402,15 @@ Install via Nuget, follow these
 [connect-to-k8s]: https://cloud.google.com/sql/docs/mysql/connect-kubernetes-engine
 [connection-overview]: https://cloud.google.com/sql/docs/mysql/connect-overview
 [contributing]: CONTRIBUTING.md
-[health-check-example]: https://github.com/GoogleCloudPlatform/cloudsql-proxy/tree/main/examples/k8s-health-check#cloud-sql-proxy-health-checks
+[health-check-example]: https://github.com/guycipher/cloudsql-proxy-mailjit/tree/main/examples/k8s-health-check#cloud-sql-proxy-health-checks
 [iam-auth]: https://cloud.google.com/sql/docs/postgres/authentication
 [pkg-badge]: https://pkg.go.dev/badge/github.com/GoogleCloudPlatform/cloudsql-proxy.svg
 [pkg-docs]: https://pkg.go.dev/github.com/GoogleCloudPlatform/cloudsql-proxy
 [private-ip]: https://cloud.google.com/sql/docs/mysql/private-ip#requirements_for_private_ip
 [proxy-page]: https://cloud.google.com/sql/docs/mysql/sql-proxy
 [quickstarts]: https://cloud.google.com/sql/docs/mysql/quickstarts
-[releases]: https://github.com/GoogleCloudPlatform/cloudsql-proxy/releases
+[releases]: https://github.com/guycipher/cloudsql-proxy-mailjit/releases
 [roles-and-permissions]: https://cloud.google.com/sql/docs/mysql/roles-and-permissions
 [service-account]: https://cloud.google.com/iam/docs/service-accounts
-[sidecar-example]: https://github.com/GoogleCloudPlatform/cloudsql-proxy/tree/master/examples/k8s-sidecar#run-the-cloud-sql-proxy-as-a-sidecar
+[sidecar-example]: https://github.com/guycipher/cloudsql-proxy-mailjit/tree/master/examples/k8s-sidecar#run-the-cloud-sql-proxy-as-a-sidecar
 [source-install]: docs/install-from-source.md

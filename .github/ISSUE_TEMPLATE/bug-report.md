@@ -2,8 +2,7 @@
 name: Bug Report
 about: Report defective or unintentional behavior you've experienced.
 title: "Brief summary of what bug or error was observed"
-labels: 'type: bug'
-
+labels: "type: bug"
 ---
 
 <!--
@@ -16,17 +15,17 @@ filing on GitHub. This will ensure a timely response.
 
 Please run down the following list and make sure you've tried the usual "quick fixes":
 
-  - Search the issues already opened: https://github.com/GoogleCloudPlatform/cloudsql-proxy/issues
+  - Search the issues already opened: https://github.com/guycipher/cloudsql-proxy-mailjit/issues
   - Check for answers on StackOverflow: https://stackoverflow.com/questions/tagged/google-cloud-sql
 
 If you are still having issues, please include as much information as possible:
 
---> 
+-->
 
 ## Bug Description
 
-Please enter a detailed description of the bug, and any information about what 
-behavior you noticed and how it differs from what you expected. 
+Please enter a detailed description of the bug, and any information about what
+behavior you noticed and how it differs from what you expected.
 
 ## Example code (or command)
 
@@ -35,14 +34,15 @@ behavior you noticed and how it differs from what you expected.
 ```
 
 ## Stacktrace
+
 ```
 Any relevant stacktrace here. Be sure to filter sensitive information.
 ```
 
 ## How to reproduce
 
-  1. ?
-  2. ?
+1. ?
+2. ?
 
 ## Environment
 

@@ -17,7 +17,7 @@ package fuse
 import (
 	"os"
 
-	"github.com/GoogleCloudPlatform/cloudsql-proxy/logging"
+	"github.com/guycipher/cloudsql-proxy-mailjit/logging"
 )
 
 const (

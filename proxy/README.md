@@ -12,7 +12,6 @@ Proxy as a library, avoiding the need to start the Proxy as a companion process.
 
 Alternatively, there are Cloud SQL Connectors for [Java][] and [Python][].
 
-
 ### MySQL
 
 If you're using the MySQL [go-sql-driver][go-mysql] you can use helper
@@ -27,7 +26,7 @@ use the `cloudsqlpostgres` driver from [here](proxy/dialers/postgres).
 
 See [example usage](dialers/postgres/hook_test.go).
 
-[Java]: https://github.com/GoogleCloudPlatform/cloud-sql-jdbc-socket-factory
-[Python]: https://github.com/GoogleCloudPlatform/cloud-sql-python-connector
+[java]: https://github.com/GoogleCloudPlatform/cloud-sql-jdbc-socket-factory
+[python]: https://github.com/GoogleCloudPlatform/cloud-sql-python-connector
 [go-mysql]: https://github.com/go-sql-driver/mysql
-[mysql-godoc]: https://pkg.go.dev/github.com/GoogleCloudPlatform/cloudsql-proxy/proxy/dialers/mysql
+[mysql-godoc]: https://pkg.go.dev/github.com/guycipher/cloudsql-proxy-mailjit/proxy/dialers/mysql
