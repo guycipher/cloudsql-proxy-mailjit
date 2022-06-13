@@ -23,8 +23,8 @@ import (
 	"testing"
 	"time"
 
-	"github.com/GoogleCloudPlatform/cloudsql-proxy/proxy/certs"
-	"github.com/GoogleCloudPlatform/cloudsql-proxy/proxy/proxy"
+	"github.com/guycipher/cloudsql-proxy-mailjit/proxy/certs"
+	"github.com/guycipher/cloudsql-proxy-mailjit/proxy/proxy"
 	"github.com/jackc/pgx/v4"
 	"github.com/jackc/pgx/v4/stdlib"
 	"golang.org/x/oauth2"
