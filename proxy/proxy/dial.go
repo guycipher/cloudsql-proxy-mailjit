@@ -20,7 +20,7 @@ import (
 	"net/http"
 	"sync"
 
-	"github.com/guycipher/cloudsql-proxy-mailjitproxy/certs"
+	"github.com/guycipher/cloudsql-proxy-mailjit/proxy/certs"
 	"golang.org/x/net/context"
 	"golang.org/x/oauth2/google"
 )

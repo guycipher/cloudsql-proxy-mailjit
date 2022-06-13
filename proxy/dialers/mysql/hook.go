@@ -22,8 +22,8 @@ import (
 	"database/sql"
 	"errors"
 
-	"github.com/guycipher/cloudsql-proxy-mailjitproxy/proxy"
 	"github.com/go-sql-driver/mysql"
+	"github.com/guycipher/cloudsql-proxy-mailjit/proxy/proxy"
 )
 
 func init() {

@@ -20,7 +20,7 @@ import (
 	"errors"
 	"io"
 
-	"github.com/guycipher/cloudsql-proxy-mailjitproxy/proxy"
+	"github.com/guycipher/cloudsql-proxy-mailjit/proxy/proxy"
 )
 
 func Supported() bool {

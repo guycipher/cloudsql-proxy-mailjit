@@ -47,8 +47,8 @@ import (
 	"syscall"
 	"time"
 
-	"github.com/guycipher/cloudsql-proxy-mailjitlogging"
-	"github.com/guycipher/cloudsql-proxy-mailjitproxy/proxy"
+	"github.com/guycipher/cloudsql-proxy-mailjit/logging"
+	"github.com/guycipher/cloudsql-proxy-mailjit/proxy/proxy"
 	"github.com/hanwen/go-fuse/v2/fs"
 	"github.com/hanwen/go-fuse/v2/fuse"
 	"github.com/hanwen/go-fuse/v2/fuse/nodefs"

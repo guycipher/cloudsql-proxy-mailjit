@@ -22,8 +22,8 @@ import (
 	"net/http"
 	"sync"
 
-	"github.com/guycipher/cloudsql-proxy-mailjitlogging"
-	"github.com/guycipher/cloudsql-proxy-mailjitproxy/proxy"
+	"github.com/guycipher/cloudsql-proxy-mailjit/logging"
+	"github.com/guycipher/cloudsql-proxy-mailjit/proxy/proxy"
 )
 
 const (

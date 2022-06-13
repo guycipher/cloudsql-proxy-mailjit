@@ -24,8 +24,8 @@ import (
 	"testing"
 	"time"
 
-	"github.com/guycipher/cloudsql-proxy-mailjitcmd/cloud_sql_proxy/internal/healthcheck"
-	"github.com/guycipher/cloudsql-proxy-mailjitproxy/proxy"
+	"github.com/guycipher/cloudsql-proxy-mailjit/cmd/cloud_sql_proxy/internal/healthcheck"
+	"github.com/guycipher/cloudsql-proxy-mailjit/proxy/proxy"
 )
 
 const (
