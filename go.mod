@@ -1,4 +1,4 @@
-module github.com/guycipher/cloudsql-proxy-mailjit/
+module github.com/guycipher/cloudsql-proxy-mailjit
 
 go 1.16
 

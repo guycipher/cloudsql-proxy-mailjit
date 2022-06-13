@@ -20,7 +20,7 @@ import (
 	"log"
 	"time"
 
-	_ "github.com/guycipher/cloudsql-proxy-mailjit/proxy/dialers/postgres"
+	_ "github.com/guycipher/cloudsql-proxy-mailjitproxy/dialers/postgres"
 )
 
 // Example shows how to use cloudsqlpostgres dialer

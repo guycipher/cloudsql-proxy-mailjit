@@ -5,7 +5,7 @@ Please provide a detailed description on what changes your PR will have.
 ## Checklist
 
 - [ ] Make sure to open an issue as a
-      [bug/issue](https://github.com/guycipher/cloudsql-proxy-mailjit/issues/new/choose)
+      [bug/issue](https://github.com/guycipher/cloudsql-proxy-mailjitissues/new/choose)
       before writing your code! That way we can discuss the change, evaluate
       designs, and agree on the general idea.
 - [ ] Ensure the tests and linter pass

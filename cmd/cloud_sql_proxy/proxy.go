@@ -28,9 +28,9 @@ import (
 	"strings"
 	"time"
 
-	"github.com/guycipher/cloudsql-proxy-mailjit/logging"
-	"github.com/guycipher/cloudsql-proxy-mailjit/proxy/fuse"
-	"github.com/guycipher/cloudsql-proxy-mailjit/proxy/proxy"
+	logging "github.com/guycipher/cloudsql-proxy-mailjitlogging"
+	"github.com/guycipher/cloudsql-proxy-mailjitproxy/fuse"
+	"github.com/guycipher/cloudsql-proxy-mailjitproxy/proxy"
 	sqladmin "google.golang.org/api/sqladmin/v1beta4"
 )
 

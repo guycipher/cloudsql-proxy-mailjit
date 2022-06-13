@@ -22,7 +22,7 @@ import (
 	"runtime"
 	"time"
 
-	"github.com/guycipher/cloudsql-proxy-mailjit/logging"
+	"github.com/guycipher/cloudsql-proxy-mailjitlogging"
 	"golang.org/x/oauth2"
 	exec "golang.org/x/sys/execabs"
 )

@@ -68,7 +68,7 @@ installed](https://go.dev/doc/install).
 Then, simply run:
 
 ```
-go install github.com/guycipher/cloudsql-proxy-mailjit/cmd/cloud_sql_proxy@latest
+go install github.com/guycipher/cloudsql-proxy-mailjitcmd/cloud_sql_proxy@latest
 ```
 
 The `cloud_sql_proxy` will be placed in `$GOPATH/bin` or `$HOME/go/bin`.
@@ -402,15 +402,15 @@ Install via Nuget, follow these
 [connect-to-k8s]: https://cloud.google.com/sql/docs/mysql/connect-kubernetes-engine
 [connection-overview]: https://cloud.google.com/sql/docs/mysql/connect-overview
 [contributing]: CONTRIBUTING.md
-[health-check-example]: https://github.com/guycipher/cloudsql-proxy-mailjit/tree/main/examples/k8s-health-check#cloud-sql-proxy-health-checks
+[health-check-example]: https://github.com/guycipher/cloudsql-proxy-mailjittree/main/examples/k8s-health-check#cloud-sql-proxy-health-checks
 [iam-auth]: https://cloud.google.com/sql/docs/postgres/authentication
 [pkg-badge]: https://pkg.go.dev/badge/github.com/GoogleCloudPlatform/cloudsql-proxy.svg
 [pkg-docs]: https://pkg.go.dev/github.com/GoogleCloudPlatform/cloudsql-proxy
 [private-ip]: https://cloud.google.com/sql/docs/mysql/private-ip#requirements_for_private_ip
 [proxy-page]: https://cloud.google.com/sql/docs/mysql/sql-proxy
 [quickstarts]: https://cloud.google.com/sql/docs/mysql/quickstarts
-[releases]: https://github.com/guycipher/cloudsql-proxy-mailjit/releases
+[releases]: https://github.com/guycipher/cloudsql-proxy-mailjitreleases
 [roles-and-permissions]: https://cloud.google.com/sql/docs/mysql/roles-and-permissions
 [service-account]: https://cloud.google.com/iam/docs/service-accounts
-[sidecar-example]: https://github.com/guycipher/cloudsql-proxy-mailjit/tree/master/examples/k8s-sidecar#run-the-cloud-sql-proxy-as-a-sidecar
+[sidecar-example]: https://github.com/guycipher/cloudsql-proxy-mailjittree/master/examples/k8s-sidecar#run-the-cloud-sql-proxy-as-a-sidecar
 [source-install]: docs/install-from-source.md

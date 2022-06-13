@@ -23,7 +23,7 @@ import (
 	"net"
 	"sync"
 
-	"github.com/guycipher/cloudsql-proxy-mailjit/logging"
+	logging "github.com/guycipher/cloudsql-proxy-mailjitlogging"
 )
 
 // SQLScope is the Google Cloud Platform scope required for executing API

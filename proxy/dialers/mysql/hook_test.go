@@ -18,7 +18,7 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/guycipher/cloudsql-proxy-mailjit/proxy/dialers/mysql"
+	"github.com/guycipher/cloudsql-proxy-mailjitproxy/dialers/mysql"
 )
 
 // ExampleCfg shows how to use Cloud SQL Auth proxy dialer if you must update some

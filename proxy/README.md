@@ -29,4 +29,4 @@ See [example usage](dialers/postgres/hook_test.go).
 [java]: https://github.com/GoogleCloudPlatform/cloud-sql-jdbc-socket-factory
 [python]: https://github.com/GoogleCloudPlatform/cloud-sql-python-connector
 [go-mysql]: https://github.com/go-sql-driver/mysql
-[mysql-godoc]: https://pkg.go.dev/github.com/guycipher/cloudsql-proxy-mailjit/proxy/dialers/mysql
+[mysql-godoc]: https://pkg.go.dev/github.com/guycipher/cloudsql-proxy-mailjitproxy/dialers/mysql
